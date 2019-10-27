@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  dynamips:
+    image: ichikawayukko/dynamips
+    volumes:
+      - ./c1700-adventerprisek9-mz.124-15.T8.bin:/c1700-adventerprisek9-mz.124-15.T8.bin:ro
+    command: -P 1700 -o 64 -r 128 c1700-adventerprisek9-mz.124-15.T8.bin
+
+# volume & commans are just example.
